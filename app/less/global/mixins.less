@@ -1,0 +1,31 @@
+.container-fluid () {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 84%; /* 620px / 700px = 88%  */
+    max-width: 940px; /* 940px / 0.88 = 1068px */
+    margin: 0 auto;
+  }
+}
+
+// .clearfix() {
+//   &::after {
+//     content: "";
+//
+//     display: table;
+//     clear: both;
+//   }
+// }
+//
+// .container {
+//   width: 320px;
+//   margin: 0 auto;
+//
+//   @media @tablet-widths {
+//     width: 640px;
+//   }
+// 
+//   @media @desktop-widths {
+//     width: 960px;
+//   }
+// }
