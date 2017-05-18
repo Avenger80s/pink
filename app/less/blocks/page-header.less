@@ -1,0 +1,191 @@
+.page-header__promo {
+  position: relative;
+
+  color: #fff;
+  text-align: center;
+
+  background-color: #1d2631;
+  background-image: url(../../img/background-1@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:  auto 461px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    top: 175px;
+    left: 50%;
+    content: '';
+    width: 258px;
+    height: 286px;
+    background-image: url('../../img/iphone-hand-1.png');
+    background-size: 258px 286px;
+    transform: translateX(-60%);
+  }
+}
+
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+  .page-header__promo {
+    background-image:url(../../img/background-1@2x.jpg);
+
+    &::after {
+      background-image:url(../../img/iphone-hand-1@2x.png);
+    }
+  }
+}
+
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+  .page-header__promo {
+    background-image:url(../../img/background-1@3x.jpg);
+
+    &::after {
+      background-image:url(../../img/iphone-hand-1@3x.png);
+    }
+  }
+}
+.page-header__promo-wrapper {
+  width: 280px;
+  padding-top: 488px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.page-header__title {
+  display: none;
+  margin-bottom: 35px;
+}
+.page-header__btn {
+  margin-bottom: 30px;
+}
+.page-header__link {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+.page-header__icon {
+  margin: 0 15px;
+  &:hover {
+    opacity: 0.4;
+  }
+}
+.page-header__dscr {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media @tablet-widths {
+  .page-header__promo-wrapper {
+    position: relative;
+    width: 300px;
+    padding-top: 210px;
+    padding-right: 320px;
+
+    text-align: center;
+
+    z-index: 20;
+  }
+  .page-header__btn {
+    width: 300px;
+  }
+  .page-header__title {
+    display: block;
+    padding: 0 30px;
+
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: lighter;
+  }
+  .page-header__dscr {
+    padding: 0 10px;
+  }
+  .page-header__promo {
+    min-height: 730px;
+
+    background-image: url(../../img/background-2@1x.jpg);
+    background-size:  auto 728px;
+
+    animation: none;
+    &::after {
+      display: block;
+      width: 700px;
+      height: 545px;
+
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 50%;
+
+      background-image: url('../../img/iphone-hand-2@1x.png');
+      background-size: 700px 545px;
+      transform: translateX(50%);
+    }
+  }
+  @media only screen and (-o-min-device-pixel-ratio: 5/4),
+         only screen and (-webkit-min-device-pixel-ratio: 1.25),
+         only screen and (min-device-pixel-ratio: 1.25),
+         only screen and (min-resolution: 1.25dppx) {
+    .page-header__promo {
+      background-image:url(../../img/background-2@2x.jpg);
+
+      &::after {
+        background-image:url(../../img/iphone-hand-2@2x.png);
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-header__promo-wrapper {
+    padding-top: 220px;
+    padding-right: 640px
+  }
+  .page-header__title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .page-header__btn {
+    margin-bottom: 65px;
+  }
+  .page-header__link {
+    margin-bottom: 55px;
+  }
+  .page-header__promo {
+    min-height: 853px;
+
+    background-image: url(../../img/background-fullsize.jpg);
+    background-size:  auto auto;
+    background-position: center 78%;
+
+    &::after {
+      display: block;
+      width: 1045px;
+      height: 645px;
+
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 45%;
+
+      background-image: url('../../img/iphone-hand-3@1x.png');
+      background-size: 1045px 645px;
+      transform: none;
+      transform: translateX(50%);
+    }
+  }
+  @media only screen and (-o-min-device-pixel-ratio: 5/4),
+         only screen and (-webkit-min-device-pixel-ratio: 1.25),
+         only screen and (min-device-pixel-ratio: 1.25),
+         only screen and (min-resolution: 1.25dppx) {
+    .page-header__promo {
+      &::after {
+        background-image:url(../../img/iphone-hand-3@2x.png);
+      }
+    }
+  }
+}
