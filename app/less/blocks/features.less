@@ -1,0 +1,199 @@
+.feautures {
+  padding: 0 20px;
+  padding-top: 40px;
+  background-image: linear-gradient(175deg, white 250px, @bg-lightgrey 250px);
+}
+.features__wrapper {
+  .container-fluid;
+}
+.features__title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+.features__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 290px;
+
+  list-style: none;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+    width: 158px;
+    height: 278px;
+    background-image: url(../../img/iphone-case-1@1x.png);
+    background-size: 158px 278px;
+  }
+}
+.features__items {
+  margin-bottom: 30px;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 142px;
+    height: 251px;
+    background-size: 142px 251px;
+    transform: translateX(-50%);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+.items--first {
+  &::after {
+    background-image: url(../../img/iphone-screen-1-1@1x.png);
+  }
+}
+.items--second {
+  &::after {
+    animation-name: itemsSecond;
+    background-image: url(../../img/iphone-screen-1-2@1x.png);
+  }
+}
+.items--third {
+  &::after {
+    animation-name: itemsThird;
+    background-image: url(../../img/iphone-screen-1-3@1x.png);
+  }
+}
+.features__items-title {
+  font-size: 18px;
+  color: #000;
+}
+
+@media @tablet-widths {
+  .feautures {
+    padding: 0;
+    padding-top: 50px;
+    background-image: linear-gradient(175deg, white 37%, @bg-lightgrey 37%);
+  }
+  .features__title {
+    font-size: 40px;
+    margin-bottom: 0;
+    &:first-child br {
+      display: none;
+    }
+  }
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 120px;
+    padding-left: 310px;
+    min-height: calc(535px-120px);
+
+    &::before {
+      display: none;
+      background-image: none;
+    }
+  }
+  .features__items {
+    text-align: left;
+    margin: 0;
+
+    &::after {
+      left: 0;
+      bottom: 0;
+
+      width: 268px;
+      height: 481px;
+      background-size: 268px 481px;
+      transform: none;
+    }
+  }
+  .items--first {
+    &::after {
+      background-image: url(../../img/iphone-screen-2-1@1x.png);
+    }
+  }
+  .items--second {
+    &::after {
+      animation-name: itemsSecond;
+      background-image: url(../../img/iphone-screen-2-2@1x.png);
+    }
+  }
+  .items--third {
+    &::after {
+      animation-name: itemsThird;
+      background-image: url(../../img/iphone-screen-2-3@1x.png);
+    }
+  }
+}
+
+@media @desktop-widths {
+  .feautures {
+    padding-top: 70px;
+    background-image: linear-gradient(175deg, white 42%, @bg-lightgrey 42%);
+  }
+  .features__title {
+    font-size: 50px;
+  }
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 75px;
+
+    min-height: calc(535px-120px);
+  }
+  .features__items {
+    position: relative;
+    padding-top: 350px;
+    text-align: center;
+    flex-basis: 25.5%;
+
+    &::after {
+      width: 292px;
+      height: 302px;
+      background-size: 292px 302px;
+      top: 0;
+      left: 50%;
+
+      animation: none;
+      transform: translateX(-50%);
+    }
+  }
+  .items--first {
+    &::after {
+      background-image: url(../../img/iphone-screen-3-1@1x.png);
+    }
+  }
+  .items--second {
+    &::after {
+      animation-name: itemsSecond;
+      background-image: url(../../img/iphone-screen-3-2@1x.png);
+    }
+  }
+  .items--third {
+    &::after {
+      animation-name: itemsThird;
+      background-image: url(../../img/iphone-screen-3-3@1x.png);
+    }
+  }
+  .features__items-title {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .features__items-dscr {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

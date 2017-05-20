@@ -23,6 +23,28 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+var togR = document.querySelector('.toggle--right'),
+    togL = document.querySelector('.toggle--left'),
+    btn1 = document.querySelector('#btn-1'),
+    btn2 = document.querySelector('#btn-2'),
+    btn3 = document.querySelector('#btn-3');
+
+togR.addEventListener('click', function() {
+    if (btn1.checked) {
+    document.getElementById('btn-2').checked = true;
+  } else if (btn2.checked) {
+    document.getElementById('btn-3').checked = true;
+  }
+});
+
+togL.addEventListener('click', function() {
+    if (btn3.checked) {
+    document.getElementById('btn-2').checked = true;
+  } else if (btn2.checked) {
+    document.getElementById('btn-1').checked = true;
+  }
+});
+
 // document.getElementById('aaa').xlink:href = 'http://google.com/'
 // var navMain = document.querySelector('.main-nav');
 // var navMenu = document.querySelector('.main-nav__menu');
